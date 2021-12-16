@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="display">
+                <p id="output">0</p>
+            </div>
+            <div class="row">
+                <button class="operator" style="width: 140px;" onclick="clearOutput()" >C</button>
+                <button class="operator" onclick="perc()">%</button>
+                <button class="operator" onclick="fordisplay('/')">/</button>
+            </div>
+            <div class="row">
+                <button id="r2-1"onclick="fordisplay('7')">7</button>
+                <button id="r2-2"onclick="fordisplay('8')">8</button>
+                <button id="r2-3"onclick="fordisplay('9')">9</button>
+                <button class="operator"onclick="fordisplay('*')">X</button>
+            </div>
+            <div class="row">
+                <button id="r3-1"onclick="fordisplay('4')">4</button>
+                <button id="r3-2"onclick="fordisplay('5')">5</button>
+                <button id="r3-3"onclick="fordisplay('6')">6</button>
+                <button class="operator"onclick="fordisplay('-')">-</button>
+            </div>
+            <div class="row">
+                <button id="r4-1"onclick="fordisplay('1')">1</button>
+                <button id="r4-2"onclick="fordisplay('2')">2</button>
+                <button id="r4-3"onclick="fordisplay('3')">3</button>
+                <button class="operator"onclick="fordisplay('+')">+</button>
+            </div>
+            <div class="row">
+                <button id="r5-1" style="width:141px;" onclick="fordisplay('0')">0</button>
+                <button class="operator"" onclick="fordisplay('.')">.</button>
+                <button class="operator" onclick="solve()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script> \
+</body>
+</html>
